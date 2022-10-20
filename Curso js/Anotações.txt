@@ -1,0 +1,9 @@
+Identificadores
+
+.Podem começar com letra, $ ou _
+.Não podem começar com números
+.É possivel usar letras ou numeros
+.É possivel usar acentos ou simbolos
+.Nao podem ter espaços
+.Nao podem ser palavras reservas
+
