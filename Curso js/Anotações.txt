@@ -7,3 +7,170 @@ Identificadores
 .Nao podem ter espaços
 .Nao podem ser palavras reservas
 
+variaveis 
+
+Como Criar variáveis, Ex: var nome ou let nome
+
+para uma variável receber um valor usamos var nome = Gustavo (desta forma criamos uma variável e ao mesmo tempo demos uma valor a ela) 
+
+nome = Gustavo (desta forma apenas demos um valor para a variável )
+
+vaga a1 =(recebe) carro1
+para colocar o segundo carro deve-se tirar o primeiro carro
+e coloca o segundo
+para a1 nao receber nada: a1=null 
+
+vaga=var/let
+
+qualquer numero é "Number"
+
+cadeia de caracteres, nomes ou conjunto de numeros com pontos e traços
+sao "string"
+
+valores como true e false sao "boolean" 
+
+
+data types
+
+number tem 2 valores internos:
+Infinity
+NaN
+
+null
+undefined
+object
+   array um object/vetor
+function
+
+var nome = window.prompt('Qual seu Nome?')
+        window.alert('É um grande prazer te conhecer, ' + nome) o símbolo de + tem função de 
+"concatenação" serve para juntar e mostrar o valor da variavel 
+que no caso é a variavel "nome"
+
+acrescente "+ '!'" para se colocar uma exclamação junta do nome
+`Eu estou aprendendo ${s}` é a melhor forma
+
+(number + number) para adição
+(string + string) para concatenação
+
+para transformar STRING em NUMBER (numero)
+pode-se usar Number.parseInt(n) (para numeros inteiros)
+             Number.parseFloat(n) (para numeros reais com virgulasm, pontos etc)
+             Number(n) (para todos)
+
+N de number em maiusculo 
+I e F respectivamente masiusculos tbm
+
+s.length diz quantos caracteres a string tem
+s.toUpperCase() tudo para "MAIÚSCULAS"
+s.toLowerCase() tudo para "minúsculas"
+
+para transformar NUMBER em STRING
+pode-se usar: String(n)
+              n.toString()
+
+document.write para escrever na tela
+document.write(`Seu nome tem ${nome.length} letras`)
+
+n1.toFixed(10) para 10 casas decimais
+.replace('.', ',') para trocar ponto por virgula
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+mostrar localizaçao de salario de paises
+
+
+operadores aritmeticos
+5 % 2 = 1
+% da o resto da divisao inteira 
+5 ** 2 = 25 
+significa 5 ao quadrado
+
+sequencia de precedência dos operadores
+()
+**
+*/% (se estiverem juntos, é executado da esquerda pra direita oq aparecer primeiro)
++-
+
+ao calcular o valor de uma variavel pode-se simplificar uma autoatribuiçao
+exemplo: var n = 3
+n = n + 4 pode reescrever isso como n+=4
+mas esse "+=" so funciona caso a variavel receba ela mais 4 
+se for algo como n = X + 4 nao se pode usar
+n = n - 5 pode-se n-=5
+n = n * 4 pode-se n*=4
+n = n / 2 pode-se n/=2
+n = n ** 2 pode-se n**=2
+n = n % 5 pode-se n%=5
+
+Incremento 
+caso eu queira adicionar ou subtrair 1 na conta
+posso usar uma simplificação 
+exemplo: 
+var n = 10
+n ++
+n passa a ser 11
+n -- 
+n volta a ser 10
+se usado --n ou ++n o calculo ja e feito e mostrado antes na tela
+
+operadores relacionais
+>  5>2 true
+<  7<4 false
+>= 8>=8 true
+<= 9<=7 false
+== 5==5 true
+!= 4!=4 false
+
+relacionais de identidade
+
+5==5 true
+5=='5' true
+5=== '5' false
+"===" operador de identidade/igualdade restrita
+para testar se é identica (de mesmo valor e de mesmo tipo)
+
+operadores lógicos
+! negação - so tem um operando TRUE -> FALSE
+                                 e
+                               FALSE -> TRUE
+
+&& conjunção
+tem 2 valores logicos que podem ser:
+TRUE e TRUE -> TRUE        TRUE e FALSE -> FALSE
+FALSE e FALSE -> FALSE     FALSE e TRUE -> FALSE
+
+|| disjunção
+TRUE e TRUE -> TRUE    FALSE e TRUE -> TRUE
+TRUE e FALSE -> TRUE   FALSE e FALSE -> FALSE
+
+caso tenha ! && e || na mesma expressão, sequencia sera:
+primeiro ! (nao)
+segundo && (e)
+terceiro|| (ou)
+
+quando se tem operadores relacionais aritmeticos e logicos na mesma
+expressao faz-se primeiros: aritmeticos - relacionais - logicos
+
+
+operadores ternarios
+se chama ternario pois tem 3 operandos
+teste ? true : false
+ex:
+média >= 7.0 ? aprovado : reprovado 
+
+DOM 
+(document object model)
+conjunto de objetos dentro do navegador dando acesso aos componentes internos
+do seu website
+
+                                W I N D O W (raíz)
+              |                        |                         |
+          Location                   Document                  History
+                                        |
+                                      HTML
+                                      |   |
+                                    Head  Body
+                                 /   |     | | \ \
+                              meta title  h1 p  p div
+                                                |
+                                             strong
